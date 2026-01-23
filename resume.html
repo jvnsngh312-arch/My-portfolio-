@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan Singh - Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --bg-color: #f5f6fa;
+            --container-bg: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin: 10px 0;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.3em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.1em;
+            margin: 15px 0 5px 0;
+        }
+
+        .job-meta {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 20px;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jeevan Singh</h1>
+            <div class="subtitle">Computer Science Engineering Student</div>
+            <div class="contact-info">
+                Ghaziabad, Uttar Pradesh | +91-8595981427 | <a href="mailto:jvnsngh312@gmail.com">jvnsngh312@gmail.com</a>
+            </div>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/jeevan-singh-6220973a6" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Results-driven Final-year B.Tech Computer Science student with a robust foundation in Full Stack Development and Python automation. Proven track record of building practical, scalable solutions, from AI-driven content analysis tools to financial calculation dashboards. Passionate about solving real-world problems through code. Seeking an entry-level Software Engineer role to leverage expertise in React.js, Python, and Database Management to drive technical innovation.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <div class="job-meta">Babu Banarasi Das Institute of Technology (BBDIT), Ghaziabad | 2022 – 2026 | CGPA: 6.5/10</div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><span class="skill-category">Languages:</span> Java, Python, JavaScript (ES6+), C++, SQL</li>
+                <li><span class="skill-category">Web Development:</span> React.js, Node.js, HTML5, CSS3, Tailwind CSS</li>
+                <li><span class="skill-category">Tools & Platforms:</span> Git/GitHub, VS Code, Postman, Linux (Basic), Docker</li>
+                <li><span class="skill-category">Core Concepts:</span> Data Structures & Algorithms (DSA), OOP, DBMS, Operating Systems, System Design</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <h3>TermsDecoder & TruthLens (AI-Powered Analysis Tool)</h3>
+            <div class="job-meta">Python, TensorFlow, OpenAI API, NLP Libraries</div>
+            <ul>
+                <li><strong>Situation:</strong> Identified a growing need for accessible legal document interpretation and validity checks in an era of digital misinformation.</li>
+                <li><strong>Task:</strong> Developed a dual-purpose application to summarize complex texts and detect AI-generated media.</li>
+                <li><strong>Action:</strong> Engineered an NLP pipeline using Python to distill legal jargon into plain English and integrated a "TruthLens" module capable of flagging deepfake content with high accuracy.</li>
+                <li><strong>Result:</strong> Successfully created a solution addressing information overload and digital security, suitable for deployment to assist students and laypeople.</li>
+            </ul>
+
+            <h3>OmniCalc Pro (SaaS Dashboard)</h3>
+            <div class="job-meta">HTML5, CSS3, JavaScript (ES6+)</div>
+            <ul>
+                <li><strong>Situation:</strong> Users often require disparate tools for financial, scientific, and health calculations, leading to fragmented workflows.</li>
+                <li><strong>Task:</strong> Build a unified, responsive multi-tool web application to consolidate these functions.</li>
+                <li><strong>Action:</strong> Designed a sleek, user-friendly interface hosting four distinct calculators (Financial, Scientific, Health, Unit Converter) and optimized JavaScript logic for instant, client-side computations.</li>
+                <li><strong>Result:</strong> Delivered a scalable browser-based tool with a premium UI/UX, structured for potential monetization and sale on marketplaces like Flippa.</li>
+            </ul>
+
+            <h3>E-Commerce Price Comparison Engine</h3>
+            <div class="job-meta">Python (BeautifulSoup, Selenium), SQL</div>
+            <ul>
+                <li><strong>Situation:</strong> Online shoppers struggle to find the best deals across multiple fragmented e-commerce platforms.</li>
+                <li><strong>Task:</strong> Create an automated tool to track and compare device prices in real-time.</li>
+                <li><strong>Action:</strong> Developed robust web scraping scripts to extract pricing data from major platforms (Amazon, Flipkart) and stored structured data in SQL for analysis.</li>
+                <li><strong>Result:</strong> Enabled users to identify minimum purchase prices instantly, automating the manual search process and ensuring up-to-date pricing accuracy.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Achievements & Certifications</h2>
+            <ul>
+                <li><strong>Coding Proficiency:</strong> Solved <strong>200+ problems</strong> on LeetCode and GeeksforGeeks, focusing on optimized Array and String manipulation algorithms. Achieved <strong>5-Star Badge</strong> in Python and SQL on HackerRank.</li>
+                <li><strong>Hackathons:</strong> Finalist in college-level "Code-Fest" hackathon; collaborated in a team of 4 to rapid-prototype solutions for real-world problem statements.</li>
+                <li><strong>Financial Engineering:</strong> Applied algorithmic logic to simulate market trends for Gold (XAU/USD) and Forex pairs, achieving a simulated positive risk-reward ratio.</li>
+                <li><strong>Certifications:</strong> "Python for Data Science" (NPTEL/Coursera) and "Full Stack Web Development Bootcamp" (Udemy).</li>
+                <li><strong>Leadership:</strong> Active Volunteer at BBDIT Technical Society; organized meaningful workshops on Basic Web Development, mentoring junior students.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

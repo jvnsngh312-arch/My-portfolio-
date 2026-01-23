@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan Singh | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gray: {
+                            900: '#121212',
+                            800: '#1e1e1e',
+                            700: '#2d2d2d',
+                        },
+                        neon: {
+                            blue: '#00f3ff',
+                            hover: '#00c4cf',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon': '0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.3)',
+                        'neon-hover': '0 0 20px rgba(0, 243, 255, 0.8), 0 0 40px rgba(0, 243, 255, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(45, 45, 45, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white antialiased selection:bg-neon-blue selection:text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-bold tracking-wider text-white">JE<span
+                            class="text-neon-blue">EVAN</span>.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about"
+                            class="hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills"
+                            class="hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#projects"
+                            class="hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#contact"
+                            class="hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-neon-blue/10 rounded-full filter blur-[128px]"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full filter blur-[128px]"></div>
+
+        <div class="text-center z-10 px-4">
+
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-white">Jeevan
+                    Singh</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                Full Stack Developer & CS Student building practical, AI-driven solutions and financial dashboards.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact"
+                    class="px-8 py-3 bg-neon-blue text-gray-900 font-bold rounded-lg shadow-neon hover:shadow-neon-hover transform hover:-translate-y-1 transition-all duration-300">
+                    Contact Me
+                </a>
+                <a href="#projects"
+                    class="px-8 py-3 border border-gray-700 rounded-lg hover:border-neon-blue hover:text-neon-blue transition-all duration-300">
+                    View Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8 relative inline-block">
+                About Me
+                <span class="absolute -bottom-2 left-0 w-full h-1 bg-neon-blue rounded-full"></span>
+            </h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                I am a final-year B.Tech Computer Science student utilizing a strong foundation in Full Stack
+                Development and Python automation tailored to solve real-world problems.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                My passion lies in building practical solutions, from AI-driven content tools that democratize
+                information to financial calculation dashboards that simplify complex data. I'm based in Ghaziabad,
+                Uttar Pradesh, and I'm always looking for the next challenge.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">Technical Arsenal</h2>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Skill Chips -->
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">Python</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">Java</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">JavaScript
+                    (ES6+)</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">React.js</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">Node.js</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">Tailwind
+                    CSS</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">SQL</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">Git
+                    / GitHub</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">Data
+                    Structures</span>
+                <span
+                    class="px-6 py-3 bg-gray-800 rounded-full border border-gray-700 hover:border-neon-blue hover:text-neon-blue transition-colors cursor-default">Automation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center text-neon-blue">Featured Projects</h2>
+
+            <!-- Featured Projects (Large Cards) -->
+            <div id="featured-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Injected by JS -->
+            </div>
+
+            <!-- Other Projects (Compact Cards) -->
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-300">Other Noteworthy Work</h2>
+            <div id="other-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Achievements</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-800 border-l-4 border-neon-blue p-6 rounded-r-lg flex items-start">
+                    <div class="flex-shrink-0 text-neon-blue mt-1">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold text-white">5-Star HackerRank Rating</h4>
+                        <p class="text-gray-400">Achieved top-tier proficiency badges in both Python and SQL domain
+                            challenges.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 border-l-4 border-purple-500 p-6 rounded-r-lg flex items-start">
+                    <div class="flex-shrink-0 text-purple-500 mt-1">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold text-white">Student Coordinator</h4>
+                        <p class="text-gray-400">Led organization efforts for "Tech-Fest" at BBDIT, managing teams and
+                            event logistics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const featuredProjects = [
+            {
+                title: "3D Car Showroom 7",
+                description: "A virtual 3D car showroom experience.",
+                github: "https://github.com/jvnsngh312-arch/3d-car-showroom7",
+                liveDemo: "https://3d-car-showroom7.vercel.app"
+            },
+            {
+                title: "BMW M4 Showcase",
+                description: "Interactive 3D showcase of a BMW M4.",
+                github: "https://github.com/jvnsngh312-arch/Bmw-m4-showcase-",
+                liveDemo: "https://bmw-m4-showroom.vercel.app"
+            },
+            {
+                title: "Profit Compounder Calc",
+                description: "A calculator for financial compounding strategies.",
+                github: "https://github.com/jvnsngh312-arch/Profitcompoundercalc",
+                liveDemo: "https://profitcompoundercalc.vercel.app"
+            }
+        ];
+
+        const otherProjects = [
+            {
+                title: "RAG PDF Chat",
+                description: "AI tool to chat with PDF documents.",
+                github: "https://github.com/jvnsngh312-arch/rag-pdf-chat",
+                liveDemo: "https://rag-pdf-chat-aeueev5jvneeeta5jmvwck.streamlit.app/?embed_options=show_toolbar,light_theme,show_colored_line,show_padding,disable_scrolling,show_footer,dark_theme"
+            },
+            {
+                title: "Go Container Runtime",
+                description: "A mini-Docker implementation in Go.",
+                github: "https://github.com/jvnsngh312-arch/go-container-runtime",
+                liveDemo: null
+            },
+            {
+                title: "Lamborghini 3D Showcase",
+                description: "Interactive 3D car showcase.",
+                github: "https://github.com/jvnsngh312-arch/Lamborgini3D_showcase",
+                liveDemo: "https://lamborgini3-d-showcase.vercel.app/"
+            },
+            {
+                title: "OmniCalc Pro",
+                description: "Comprehensive calculator app.",
+                github: "https://github.com/jvnsngh312-arch/Omnicalc-pro",
+                liveDemo: "https://omnicalc-pro.vercel.app/"
+            },
+            {
+                title: "Terms Decoder Student",
+                description: "Educational tool for students.",
+                github: "https://github.com/jvnsngh312-arch/Termsdecoderstudent",
+                liveDemo: "https://terms-decoder.vercel.app"
+            }
+        ];
+
+        // --- Render Featured Projects (Large Cards) ---
+        const featuredGrid = document.getElementById('featured-grid');
+        featuredProjects.forEach((proj, index) => {
+            const colors = ['neon-blue', 'purple-500', 'green-500'];
+            const color = colors[index % colors.length];
+            const textClass = index % 3 === 0 ? 'text-neon-blue' : (index % 3 === 1 ? 'text-purple-400' : 'text-green-400');
+
+            const card = document.createElement('div');
+            card.className = "glass-card rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hover:shadow-2xl h-full flex flex-col";
+
+            let buttonsHtml = `
+                    <a href="${proj.github}" target="_blank"
+                        class="text-sm font-semibold ${textClass} hover:text-white transition-colors flex items-center">
+                        Source Code <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </a>
+            `;
+
+            if (proj.liveDemo) {
+                buttonsHtml += `
+                    <a href="${proj.liveDemo}" target="_blank"
+                        class="text-sm font-semibold ${textClass} hover:text-white transition-colors flex items-center">
+                        Live Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </a>
+                `;
+            }
+
+            card.innerHTML = `
+                <div class="h-2 bg-${color} w-full"></div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <h3 class="text-2xl font-bold mb-4 text-white">${proj.title}</h3>
+                    <p class="text-gray-400 mb-6 flex-1">${proj.description}</p>
+                    <div class="mt-auto flex gap-4">
+                        ${buttonsHtml}
+                    </div>
+                </div>
+            `;
+            featuredGrid.appendChild(card);
+        });
+
+        // --- Render Other Projects (Compact Cards) ---
+        const otherGrid = document.getElementById('other-grid');
+        const folderIcon = `
+            <svg class="w-8 h-8 text-neon-blue mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+            </svg>
+        `;
+
+        otherProjects.forEach(proj => {
+            const card = document.createElement('div');
+            // Compact styling: less padding, slightly smaller hover effect
+            card.className = "glass-card p-6 rounded-xl hover:transform hover:-translate-y-1 transition-all duration-300 hover:bg-gray-800/80 cursor-default";
+
+            let linksHtml = `
+                <a href="${proj.github}" target="_blank" class="text-gray-400 hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                </a>
+            `;
+
+            if (proj.liveDemo) {
+                linksHtml += `
+                    <a href="${proj.liveDemo}" target="_blank" class="text-gray-400 hover:text-neon-blue transition-colors" title="Live Demo">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                `;
+            }
+
+            card.innerHTML = `
+                <div class="flex justify-between items-start mb-2">
+                    ${folderIcon}
+                    <div class="flex space-x-3">
+                        ${linksHtml}
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-neon-blue transition-colors">${proj.title}</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">${proj.description}</p>
+            `;
+            otherGrid.appendChild(card);
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Let's Build Something Amazing.</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+                <a href="mailto:jvnsngh312@gmail.com"
+                    class="flex items-center text-gray-400 hover:text-neon-blue transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                        </path>
+                    </svg>
+                    jvnsngh312@gmail.com
+                </a>
+                <span class="hidden md:block text-gray-600">|</span>
+                <span class="flex items-center text-gray-400">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                        </path>
+                    </svg>
+                    +91-8595981427
+                </span>
+                <span class="hidden md:block text-gray-600">|</span>
+                <a href="https://linkedin.com/in/jeevan-singh-6220973a6"
+                    class="flex items-center text-gray-400 hover:text-neon-blue transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+            <p class="text-gray-600 text-sm">
+                &copy; 2026 Jeevan Singh. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
